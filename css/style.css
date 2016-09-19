@@ -92,13 +92,13 @@ aside{
 }
 
 footer{
-width: 1000px;
-height: 70px;
-background: maroon;
-float: left;
-margin-top: 20px;
-border-radius: 10px;
-margin-bottom: 20px;
+width: auto;
+height: auto;
+margin-top: auto;
+border-radius: auto;
+margin-bottom: auto;
+margin-right: auto;
+background-color: black;
 }
 
 p{
