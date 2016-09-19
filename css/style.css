@@ -65,7 +65,7 @@ li{
 	float: left;
 	list-style-type: none;
 	padding: 10px;
-	background: black;
+	background: blue;
 	margin: 3px;
 	border-radius: 10px;
 	box-shadow: 0 0 10px white inset; 
@@ -129,6 +129,7 @@ p{
 .lado:visited{color: #e7a61a; text-decoration: none;}
 .lado:hover{color: #e7a61a; text-decoration: none; text-shadow: 0 0 13px red;}
 .lado:active{color: #e7a61a; text-decoration: none;}
+
 /*SEUDO CLASES*/
 
 
