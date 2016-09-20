@@ -205,28 +205,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7e7e7e', end
 
 }
 
-.icon-home {
-	display: block;
-	position: absolute;
-	top: 2px;
-}
 
 
-
-.search_bar {
-	height: auto;
-	position: absolute;
-	text-align: center;
-	width: auto;
-}
-
-
-IMG.imgcenter{
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      border:none;
-      }
 
 
 
