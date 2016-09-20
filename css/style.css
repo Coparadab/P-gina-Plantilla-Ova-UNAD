@@ -1,6 +1,11 @@
 /*font-family: 'Shadows Into Light', cursive;
  font-family: 'Indie Flower', cursive;
 */
+{
+	margin: 0;
+	padding: 0;
+}
+
 
 #contenidos{
 	width: auto;
@@ -14,7 +19,7 @@
 
 /*ETIQUETAS*/
 body{
-background-color: white;
+background-color: black;
 background-repeat: no-repeat;
 background-size: cover;
 }
@@ -44,23 +49,38 @@ text-align: center;
 
 
 header{
-	width: auto;
+	width: 100%;
 	height: auto;
 	background-color: #ffffff;
 }
 
 nav{
-width: auto;
+width: 1000px;
+margin: 20px auto;
+overflow: hidden;
 height: 50px;
 background: white;
-border-radius: 10px;
+border-radius: 4px;
+background: #797979;
+border-bottom: 1px solid #555555;
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#8b8b8b+0,6a6a6a+50,5e5e5e+51,717171+100 */
+background: #8b8b8b; /* Old browsers */
+background: -moz-linear-gradient(top,  #8b8b8b 0%, #6a6a6a 50%, #5e5e5e 51%, #717171 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #8b8b8b 0%,#6a6a6a 50%,#5e5e5e 51%,#717171 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #8b8b8b 0%,#6a6a6a 50%,#5e5e5e 51%,#717171 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8b8b8b', endColorstr='#717171',GradientType=0 ); /* IE6-9 */
+
 
 }
-ul{
+ul, ol{
+list-style: none;
 margin: auto;
 padding-top: 4px;
+height: auto;
+width: auto;
 }
-
+/*
 li{
 	float: left;
 	list-style-type: none;
@@ -69,7 +89,7 @@ li{
 	margin: 3px;
 	border-radius: 10px;
 	box-shadow: 0 0 10px white inset; 
-
+*/
 }
 
 section{
@@ -115,21 +135,107 @@ p{
 
 /*CLASES*/
 
-.ancho_menu_home{width: auto;}
-.ancho_menu_paginas{width: auto;}
-.menu:link{color: #e7a61a; text-decoration: none;}
-.menu:visited{color: #e7a61a; text-decoration: none;}
-.menu:hover{color: #e7a61a; text-decoration: none; text-shadow: 0 0 13px red;}
-.menu:active{color: #e7a61a; text-decoration: none;}
+.menu{
+	width: 85%;
+	display: table;
+	table-layout: fixed;
+	float: left;
+
+}
 
 
-.ancho_lado_home{width: auto;}
-.ancho_lado_paginas{width: auto;}
-.lado:link{color: #e7a61a; text-decoration: none;}
-.lado:visited{color: #e7a61a; text-decoration: none;}
-.lado:hover{color: #e7a61a; text-decoration: none; text-shadow: 0 0 13px red;}
-.lado:active{color: #e7a61a; text-decoration: none;}
+.menu  li {
+	display: table-cell;
+	overflow: hidden;
+	width: 100%;
+	border-right: 1px solid #5C5C5C;
+	border-left: 1px solid rgba(255,255,255,.2);
 
+}
+
+.menu li:first-child {
+	border-left: none;
+
+}
+
+.menu li:first-child:hover {
+	border-left: none;
+}
+
+.menu li a {
+	color: white;
+	display: block;
+	font-family: "Myrias Pro",Arial;
+	font-size: 14px;
+	padding: 10px 0;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: 1px 1px 0px rgba(0,0,0,.3);
+}
+
+.menu li:hover {
+	background: rgba(0,0,0,.3);
+	border-right: 1px solid-transparent;
+	border-left: 1px solid-transparent;
+	border-bottom: none;
+}
+
+.menu li:active {
+	background: rgba(0,0,0,.3);
+	box-shadow: inset 0px 3px 2px rgba(0,0,0,1);
+}
+
+.search_bar {
+	width: 15%;
+	float: left;
+	padding: 7px 10px;
+	box-sizing: border-box;
+
+}
+
+.search_bar input {
+	width: 100%;
+	height: auto;
+	border-radius: 50px;
+	border: none;
+	border-bottom: 1px solid #858585
+	padding0px 10px 0px 25px;
+	box-sizing: border-box;
+	height: 22px;
+
+	box-shadow: insetn0px 1px 3px rgba(0,0,0,.7);
+
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7e7e7e+0,797979+50,6e6e6e+51,767676+100 */
+background: #7e7e7e; /* Old browsers */
+background: -moz-linear-gradient(top,  #7e7e7e 0%, #797979 50%, #6e6e6e 51%, #767676 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #7e7e7e 0%,#797979 50%,#6e6e6e 51%,#767676 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #7e7e7e 0%,#797979 50%,#6e6e6e 51%,#767676 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7e7e7e', endColorstr='#767676',GradientType=0 ); /* IE6-9 */
+
+}
+
+
+.search_bar input:focus {
+	background: white;
+	box-shadow: none;
+
+
+}
+
+.icon-search:before {
+  content: "\e986";
+}
+
+.icon-home {
+	display: block;
+	position: center;
+	top: 2px;
+
+.icon-search {
+
+}
+
+}
 /*SEUDO CLASES*/
 
 
