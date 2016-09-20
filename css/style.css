@@ -190,6 +190,7 @@ p{
 	float: left;
 	padding: 7px 10px;
 	box-sizing: border-box;
+	position: relative;
 
 }
 
@@ -227,12 +228,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7e7e7e', end
 
 .icon-home {
 	display: block;
-	position: center;
+	position: relative;
 	top: 2px;
 }
 
 .icon-search:before {
   content: "\e986";
+}
+
+.icon-search {
+	position: absolute;
+	bottom: 10px;
+	left: 15px;
+	color: white;
+	text-decoration: none;
 }
 
 
