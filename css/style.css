@@ -58,7 +58,7 @@ nav{
 width: 1000px;
 margin: 20px auto;
 overflow: hidden;
-height: 50px;
+height: auto;
 background: white;
 border-radius: 4px;
 background: #797979;
@@ -222,20 +222,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7e7e7e', end
 
 }
 
-.icon-search:before {
-  content: "\e986";
+
 }
 
 .icon-home {
 	display: block;
 	position: center;
 	top: 2px;
-
-.icon-search {
-
 }
 
+.icon-search:before {
+  content: "\e986";
 }
+
+
 /*SEUDO CLASES*/
 
 
